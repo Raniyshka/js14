@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .3s ease-in-out;
+}
+
+.tabs{
+    margin: 50px;
+    position: relative;
+}
+
+.tabs_btns{
+    display: flex;
+    gap: 1%;
+}
+
+.tab_btn{
+    cursor: pointer;
+    background-color: rgb(165, 210, 178);
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+    color: rgb(66, 93, 113);
+}
+
+.tab_btn.active{
+    background-color: rgb(129, 172, 129);
+    color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.tab_text{
+    position: absolute;
+    top: 100%;
+    padding: 15px;
+    background-color: rgb(129, 172, 129);
+    color: rgb(74, 66, 82);
+    width: 100%;
+    visibility: hidden;
+    line-height: 2;
+}
+
+.tab_text.active{
+    visibility: visible;
+}
+
